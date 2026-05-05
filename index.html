@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TOP 50 zákazníků podle obratu, 2026 YTD</title>
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --panel: #ffffff;
+      --text: #182033;
+      --muted: #667085;
+      --line: #dbe3f0;
+      --accent: #2457ff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    .wrap {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 32px 20px 56px;
+    }
+    .hero, .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 24px;
+      box-shadow: 0 8px 24px rgba(16, 24, 40, 0.06);
+    }
+    .card { margin-top: 20px; }
+    h1, h2, p { margin: 0 0 12px; }
+    h1 { font-size: 34px; line-height: 1.1; }
+    h2 { font-size: 22px; }
+    .muted { color: var(--muted); }
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+      margin-top: 18px;
+    }
+    .metric {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 14px 16px;
+      background: #f9fbff;
+    }
+    .metric .label {
+      font-size: 12px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .metric .value {
+      font-size: 24px;
+      font-weight: 700;
+      margin-top: 6px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    th, td {
+      text-align: left;
+      padding: 12px 10px;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+    }
+    th {
+      background: #f8faff;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--muted);
+      position: sticky;
+      top: 0;
+    }
+    td.num { text-align: right; white-space: nowrap; }
+    td.small { color: var(--muted); }
+    .table-wrap {
+      overflow: auto;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+    }
+    .footer {
+      margin-top: 16px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <h1>TOP 50 zákazníků podle obratu</h1>
+      <p class="muted">Období od 1. 1. 2026 do 5. 5. 2026, bez Maloobchodního prodeje.</p>
+      <div class="meta">
+        <div class="metric">
+          <div class="label">Pořadí</div>
+          <div class="value">TOP 50</div>
+        </div>
+        <div class="metric">
+          <div class="label">Zpracované objednávky</div>
+          <div class="value">44 141</div>
+        </div>
+        <div class="metric">
+          <div class="label">Vynechané retail objednávky</div>
+          <div class="value">209</div>
+        </div>
+        <div class="metric">
+          <div class="label">Zákazníků v datasetu</div>
+          <div class="value">23 325</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Tabulka</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Zákazník</th>
+              <th>Email</th>
+              <th>Město</th>
+              <th>Objednávky</th>
+              <th>Průměrná obj.</th>
+              <th>Obrat s DPH</th>
+              <th>Poslední objednávka</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="num">1</td><td>FAKAR s.r.o. (Iveta Farmačková)</td><td>info@energieprirody.cz</td><td>Brno 2</td><td class="num">52</td><td class="num">4 469,44 Kč</td><td class="num">232 411 Kč</td><td class="small">2026-05-04</td></tr>
+            <tr><td class="num">2</td><td>Adam Cechner PRODEJ</td><td>adamcechner@gmail.com</td><td></td><td class="num">66</td><td class="num">2 732,33 Kč</td><td class="num">180 334 Kč</td><td class="small">2026-05-04</td></tr>
+            <tr><td class="num">3</td><td>Krystyna Kašubiaková</td><td>nati.sz@email.cz</td><td>Třinec</td><td class="num">25</td><td class="num">3 942,53 Kč</td><td class="num">98 563,15 Kč</td><td class="small">2026-04-28</td></tr>
+            <tr><td class="num">4</td><td>Vendula Scheichlová (Kateřina Krejčí)</td><td>mgr.vendulascheichlova@seznam.cz</td><td>České Budějovice</td><td class="num">24</td><td class="num">2 928,54 Kč</td><td class="num">70 285 Kč</td><td class="small">2026-05-01</td></tr>
+            <tr><td class="num">5</td><td>Merry Lynch (Jan Churan)</td><td>rivox@volny.cz</td><td>Ústí nad Labem 1</td><td class="num">12</td><td class="num">5 564,17 Kč</td><td class="num">66 770 Kč</td><td class="small">2026-05-04</td></tr>
+            <tr><td class="num">6</td><td>Ivana Kunešová</td><td>ivanakunes@seznam.cz</td><td>Horažďovice</td><td class="num">53</td><td class="num">1 100,51 Kč</td><td class="num">58 327 Kč</td><td class="small">2026-05-02</td></tr>
+            <tr><td class="num">7</td><td>KidPro Toys s.r.o. (Eva Domorádová)</td><td>domoradova@kidpro.cz</td><td>Praha</td><td class="num">24</td><td class="num">1 982,79 Kč</td><td class="num">47 587 Kč</td><td class="small">2026-04-27</td></tr>
+            <tr><td class="num">8</td><td>Miluše Dubská</td><td>milusedubska@seznam.cz</td><td>Bystřice</td><td class="num">21</td><td class="num">2 076,04 Kč</td><td class="num">43 596,75 Kč</td><td class="small">2026-05-01</td></tr>
+            <tr><td class="num">9</td><td>Z-BOX (Kamila Sabelová)</td><td>k.sabelova@seznam.cz</td><td>Komorní Lhotka</td><td class="num">12</td><td class="num">3 360,92 Kč</td><td class="num">40 331 Kč</td><td class="small">2026-05-04</td></tr>
+            <tr><td class="num">10</td><td>Dana Pokorná</td><td>danka.pokorna1@seznam.cz</td><td>Budětsko</td><td class="num">12</td><td class="num">3 342,33 Kč</td><td class="num">40 108 Kč</td><td class="small">2026-04-28</td></tr>
+            <tr><td class="num">11</td><td>Miroslava Kostková</td><td>mir.kostkova@seznam.cz</td><td>Kladno</td><td class="num">15</td><td class="num">2 425 Kč</td><td class="num">36 375 Kč</td><td class="small">2026-04-24</td></tr>
+            <tr><td class="num">12</td><td>Dana Grogerová</td><td>dandy.25@seznam.cz</td><td>Milevsko 1</td><td class="num">8</td><td class="num">4 473,62 Kč</td><td class="num">35 789 Kč</td><td class="small">2026-04-30</td></tr>
+            <tr><td class="num">13</td><td>Milada Fohlerová</td><td>mfohlerova@centrum.cz</td><td>Klášter Hradiště nad Jizerou</td><td class="num">18</td><td class="num">1 953,22 Kč</td><td class="num">35 158 Kč</td><td class="small">2026-05-02</td></tr>
+            <tr><td class="num">14</td><td>Z-BOX (Zdeňka Špůrková)</td><td>zdenina.11@seznam.cz</td><td>Dobré Pole</td><td class="num">8</td><td class="num">4 251,88 Kč</td><td class="num">34 015 Kč</td><td class="small">2026-05-04</td></tr>
+            <tr><td class="num">15</td><td>Martina Tomšů</td><td>martina1tomsu@gmail.com</td><td>Dolní Benešov</td><td class="num">14</td><td class="num">2 354,29 Kč</td><td class="num">32 960 Kč</td><td class="small">2026-04-27</td></tr>
+            <tr><td class="num">16</td><td>Lucie Holubcová</td><td>lucahorackova@seznam.cz</td><td>Krnov 1</td><td class="num">7</td><td class="num">4 623,71 Kč</td><td class="num">32 366 Kč</td><td class="small">2026-05-05</td></tr>
+            <tr><td class="num">17</td><td>Hana Langerová</td><td>regnalh@gmail.com</td><td>Kamenice</td><td class="num">9</td><td class="num">3 592,33 Kč</td><td class="num">32 331 Kč</td><td class="small">2026-04-28</td></tr>
+            <tr><td class="num">18</td><td>Vendula Zpěváková</td><td>vendulka.churanova@seznam.cz</td><td>Bor</td><td class="num">13</td><td class="num">2 479,77 Kč</td><td class="num">32 237 Kč</td><td class="small">2026-04-20</td></tr>
+            <tr><td class="num">19</td><td>Pavla Kavinová</td><td>kavinova.pavla@seznam.cz</td><td>Nezbavětice</td><td class="num">26</td><td class="num">1 230,81 Kč</td><td class="num">32 001 Kč</td><td class="small">2026-05-04</td></tr>
+            <tr><td class="num">20</td><td>Andrea Svitáková</td><td>andrea.svitakova@seznam.cz</td><td>Benešov u Prahy</td><td class="num">19</td><td class="num">1 683,30 Kč</td><td class="num">31 982,75 Kč</td><td class="small">2026-04-15</td></tr>
+            <tr><td class="num">21</td><td>Marcela Šperlová</td><td>kocka33@seznam.cz</td><td>Dobšice</td><td class="num">9</td><td class="num">3 546,22 Kč</td><td class="num">31 916 Kč</td><td class="small">2026-05-02</td></tr>
+            <tr><td class="num">22</td><td>Ladislava Šperlingová</td><td>l.sperlingova@seznam.cz</td><td>Praha 9 - Hloubětín</td><td class="num">15</td><td class="num">2 125,53 Kč</td><td class="num">31 883 Kč</td><td class="small">2026-04-18</td></tr>
+            <tr><td class="num">23</td><td>Lenka Holadová</td><td>lenkaholadova@seznam.cz</td><td>Děčín</td><td class="num">7</td><td class="num">4 528 Kč</td><td class="num">31 696 Kč</td><td class="small">2026-04-27</td></tr>
+            <tr><td class="num">24</td><td>Iveta Freyová</td><td>typivet@seznam.cz</td><td>Praha 9 - Letňany</td><td class="num">9</td><td class="num">3 520,44 Kč</td><td class="num">31 684 Kč</td><td class="small">2026-03-17</td></tr>
+            <tr><td class="num">25</td><td>Marie Čekanová</td><td>maricek56@seznam.cz</td><td>Olšany</td><td class="num">14</td><td class="num">2 246,36 Kč</td><td class="num">31 449 Kč</td><td class="small">2026-04-29</td></tr>
+            <tr><td class="num">26</td><td>Jitka Doležalová</td><td>doletka2@seznam.cz</td><td>Velké Meziříčí</td><td class="num">10</td><td class="num">3 138,20 Kč</td><td class="num">31 382 Kč</td><td class="small">2026-05-04</td></tr>
+            <tr><td class="num">27</td><td>Gabriela Makarová</td><td>gabcag@seznam.cz</td><td>Ostrava</td><td class="num">12</td><td class="num">2 600,58 Kč</td><td class="num">31 207 Kč</td><td class="small">2026-04-28</td></tr>
+            <tr><td class="num">28</td><td>Martina Mrázková</td><td>mrazkova73@seznam.cz</td><td>Uherské Hradiště 6</td><td class="num">34</td><td class="num">914,24 Kč</td><td class="num">31 084 Kč</td><td class="small">2026-05-01</td></tr>
+            <tr><td class="num">29</td><td>Alena Tůmová</td><td>ala.tumova@centrum.cz</td><td>Jindřichův Hradec 1</td><td class="num">12</td><td class="num">2 584,83 Kč</td><td class="num">31 018 Kč</td><td class="small">2026-04-30</td></tr>
+            <tr><td class="num">30</td><td>Dana Schitková</td><td>dana.schitkova@centrum.cz</td><td>Šumperk 1</td><td class="num">7</td><td class="num">4 281,57 Kč</td><td class="num">29 971 Kč</td><td class="small">2026-04-21</td></tr>
+            <tr><td class="num">31</td><td>Lýdie Vallušová</td><td>lydie05@seznam.cz</td><td>Stráž pod Ralskem</td><td class="num">19</td><td class="num">1 573,68 Kč</td><td class="num">29 900 Kč</td><td class="small">2026-05-04</td></tr>
+            <tr><td class="num">32</td><td>Jaroslava Voleníková</td><td>jaus1@seznam.cz</td><td>Teplice 1</td><td class="num">9</td><td class="num">3 317,11 Kč</td><td class="num">29 854 Kč</td><td class="small">2026-05-03</td></tr>
+            <tr><td class="num">33</td><td>Věra Čechová (Věra Čechová)</td><td>veracech@seznam.cz</td><td>Klenčí pod Čerchovem</td><td class="num">17</td><td class="num">1 754,24 Kč</td><td class="num">29 822 Kč</td><td class="small">2026-05-04</td></tr>
+            <tr><td class="num">34</td><td>Jana Šrámková</td><td>sramkova_jana@seznam.cz</td><td>Plzeň</td><td class="num">13</td><td class="num">2 263,62 Kč</td><td class="num">29 427 Kč</td><td class="small">2026-04-17</td></tr>
+            <tr><td class="num">35</td><td>Monika Černá</td><td>cerna.monika@mujmail.cz</td><td>Kladno-Vrapice</td><td class="num">16</td><td class="num">1 829,19 Kč</td><td class="num">29 267 Kč</td><td class="small">2026-05-02</td></tr>
+            <tr><td class="num">36</td><td>Gabriela Bohuslavová</td><td>g.bohuslavova@seznam.cz</td><td>Sadov</td><td class="num">8</td><td class="num">3 654,88 Kč</td><td class="num">29 239 Kč</td><td class="small">2026-05-04</td></tr>
+            <tr><td class="num">37</td><td>Blanka Sekyrková</td><td>blankasekyrkova@seznam.cz</td><td>Pardubice</td><td class="num">15</td><td class="num">1 901,50 Kč</td><td class="num">28 522,45 Kč</td><td class="small">2026-05-03</td></tr>
+            <tr><td class="num">38</td><td>Hana Bačkalová</td><td>oslancovah@seznam.cz</td><td>Vlkaneč</td><td class="num">15</td><td class="num">1 881,57 Kč</td><td class="num">28 223,50 Kč</td><td class="small">2026-05-02</td></tr>
+            <tr><td class="num">39</td><td>Jaroslava Boudná</td><td>boudnajarka@seznam.cz</td><td>Ústí nad Labem Trmice</td><td class="num">15</td><td class="num">1 877 Kč</td><td class="num">28 155 Kč</td><td class="small">2026-04-19</td></tr>
+            <tr><td class="num">40</td><td>Andrea Kolářová</td><td>hyzlovaa@seznam.cz</td><td>Ivanovice na Hané</td><td class="num">9</td><td class="num">3 121,44 Kč</td><td class="num">28 093 Kč</td><td class="small">2026-04-21</td></tr>
+            <tr><td class="num">41</td><td>Iva Zatloukalová</td><td>ivaabcd1234@seznam.cz</td><td>Přerov 2</td><td class="num">15</td><td class="num">1 865 Kč</td><td class="num">27 975 Kč</td><td class="small">2026-04-27</td></tr>
+            <tr><td class="num">42</td><td>Marie Krupková</td><td>marie@krupci.cz</td><td>Příbor</td><td class="num">19</td><td class="num">1 454,96 Kč</td><td class="num">27 644,15 Kč</td><td class="small">2026-05-02</td></tr>
+            <tr><td class="num">43</td><td>Centrum sociálních služeb (Marie Hromadková)</td><td>hromadkovamasha@centrum.cz</td><td>Jindřichův Hradec 1</td><td class="num">17</td><td class="num">1 620,76 Kč</td><td class="num">27 553 Kč</td><td class="small">2026-05-04</td></tr>
+            <tr><td class="num">44</td><td>Radomíra Kučerová</td><td>35radka@seznam.cz</td><td>Chvaletice</td><td class="num">9</td><td class="num">2 961,33 Kč</td><td class="num">26 652 Kč</td><td class="small">2026-04-29</td></tr>
+            <tr><td class="num">45</td><td>Zlata Mihulová Růžičková</td><td>zlata@recoma.cz</td><td>Drnovice u Lysic</td><td class="num">12</td><td class="num">2 186,50 Kč</td><td class="num">26 238 Kč</td><td class="small">2026-05-02</td></tr>
+            <tr><td class="num">46</td><td>Jana Kotasová</td><td>j.kotasova@email.cz</td><td>Havířov 1</td><td class="num">13</td><td class="num">1 998 Kč</td><td class="num">25 974 Kč</td><td class="small">2026-05-02</td></tr>
+            <tr><td class="num">47</td><td>Ilona Malinovská</td><td>illonkamali@seznam.cz</td><td>Stará Voda</td><td class="num">13</td><td class="num">1 986,38 Kč</td><td class="num">25 823 Kč</td><td class="small">2026-04-19</td></tr>
+            <tr><td class="num">48</td><td>Stanislava Slámová</td><td>slamova77@email.cz</td><td>Vimperk</td><td class="num">20</td><td class="num">1 282,80 Kč</td><td class="num">25 656 Kč</td><td class="small">2026-05-04</td></tr>
+            <tr><td class="num">49</td><td>Emílie Nováková</td><td>milka.novakova@seznam.cz</td><td>Lechovice</td><td class="num">14</td><td class="num">1 827,86 Kč</td><td class="num">25 590 Kč</td><td class="small">2026-05-04</td></tr>
+            <tr><td class="num">50</td><td>Veronika Hriciščuková</td><td>veru.hrici@seznam.cz</td><td>Terezín</td><td class="num">4</td><td class="num">6 302,25 Kč</td><td class="num">25 209 Kč</td><td class="small">2026-04-14</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="footer">Jednoduchý repo report připravený pro rychlé sdílení a kontrolu.</div>
+    </section>
+  </div>
+</body>
+</html>
